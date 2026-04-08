@@ -149,5 +149,26 @@
       { "word": "Dollar Bill", "hint": "Washington", "word_ne": "डलर नोट", "hint_ne": "वाशिंगटन" },
       { "word": "Vending Machine", "hint": "Coins", "word_ne": "भेन्डिङ मेसिन", "hint_ne": "सिक्का" }
     ]
+  },
+  {
+    "category": "Animals",
+    "category_ne": "जनावरहरू",
+    "words": [
+      { "word": "Bald Eagle", "hint": "National bird", "word_ne": "बाल्ड इगल", "hint_ne": "राष्ट्रिय चरा" },
+      { "word": "American Bison", "hint": "Plains", "word_ne": "अमेरिकन बाइसन", "hint_ne": "मैदान" },
+      { "word": "Grizzly Bear", "hint": "Claws", "word_ne": "ग्रिज्ली भालु", "hint_ne": "नङ" },
+      { "word": "Alligator", "hint": "Swamp", "word_ne": "एलिगेटर", "hint_ne": "दलदल" },
+      { "word": "Rattlesnake", "hint": "Tail", "word_ne": "र्‍याटलस्नेक", "hint_ne": "पुच्छर" },
+      { "word": "Mountain Lion", "hint": "Puma", "word_ne": "माउन्टेन लायन", "hint_ne": "पुमा" },
+      { "word": "Moose", "hint": "Antlers", "word_ne": "मुस", "hint_ne": "सिङ" },
+      { "word": "Beaver", "hint": "Dam", "word_ne": "बिभर", "hint_ne": "बाँध" },
+      { "word": "Coyote", "hint": "Howl", "word_ne": "कोयोट", "hint_ne": "ह्वाँउ" },
+      { "word": "Raccoon", "hint": "Mask", "word_ne": "राकुन", "hint_ne": "मुखौटा" },
+      { "word": "Wild Turkey", "hint": "Feathers", "word_ne": "जंगली टर्की", "hint_ne": "प्वाँख" },
+      { "word": "Bobcat", "hint": "Spotted", "word_ne": "बबक्याट", "hint_ne": "थोप्ला" },
+      { "word": "Manatee", "hint": "Sea cow", "word_ne": "मानाटी", "hint_ne": "समुद्री गाई" },
+      { "word": "Pronghorn", "hint": "Fast", "word_ne": "प्रोङहर्न", "hint_ne": "छिटो" },
+      { "word": "Red Fox", "hint": "Bushy tail", "word_ne": "रातो फ्याउरो", "hint_ne": "घना पुच्छर" }
+    ]
   }
 ]

@@ -147,5 +147,26 @@
       { "word": "Graffiti", "hint": "Street", "word_ne": "ग्राफिटी", "hint_ne": "सडक" },
       { "word": "Symphony", "hint": "Orchestra", "word_ne": "सिम्फोनी", "hint_ne": "अर्केस्ट्रा" }
     ]
+  },
+  {
+    "category": "Animals",
+    "category_ne": "जनावरहरू",
+    "words": [
+      { "word": "Lion", "hint": "Pride", "word_ne": "सिंह", "hint_ne": "समूह" },
+      { "word": "Elephant", "hint": "Trunk", "word_ne": "हात्ती", "hint_ne": "सुँड" },
+      { "word": "Penguin", "hint": "Antarctica", "word_ne": "पेन्गुइन", "hint_ne": "अन्टार्कटिका" },
+      { "word": "Kangaroo", "hint": "Pouch", "word_ne": "कङ्गारु", "hint_ne": "थैली" },
+      { "word": "Giraffe", "hint": "Long neck", "word_ne": "जिराफ", "hint_ne": "लामो घाँटी" },
+      { "word": "Polar Bear", "hint": "Arctic", "word_ne": "ध्रुवीय भालु", "hint_ne": "आर्कटिक" },
+      { "word": "Panda", "hint": "Bamboo", "word_ne": "पाण्डा", "hint_ne": "बाँस" },
+      { "word": "Dolphin", "hint": "Ocean", "word_ne": "डल्फिन", "hint_ne": "समुद्र" },
+      { "word": "Camel", "hint": "Desert", "word_ne": "ऊँट", "hint_ne": "मरुभूमि" },
+      { "word": "Zebra", "hint": "Stripes", "word_ne": "जेब्रा", "hint_ne": "धर्का" },
+      { "word": "Wolf", "hint": "Pack", "word_ne": "ब्वाँसो", "hint_ne": "झुन्ड" },
+      { "word": "Koala", "hint": "Eucalyptus", "word_ne": "कोआला", "hint_ne": "युक्लिप्टस" },
+      { "word": "Octopus", "hint": "Eight arms", "word_ne": "अक्टोपस", "hint_ne": "आठ भुजा" },
+      { "word": "Cheetah", "hint": "Fastest", "word_ne": "चितुवा", "hint_ne": "सबैभन्दा छिटो" },
+      { "word": "Gorilla", "hint": "Silverback", "word_ne": "गोरिल्ला", "hint_ne": "सिल्भरब्याक" }
+    ]
   }
 ]

@@ -118,5 +118,26 @@
       { "word": "Earthquake", "hint": "Shaking", "word_ne": "भूकम्प", "hint_ne": "हल्लिने" },
       { "word": "Waterfall", "hint": "Water", "word_ne": "झरना", "hint_ne": "पानी" }
     ]
+  },
+  {
+    "category": "जनावरहरू / Animals",
+    "category_ne": "जनावरहरू",
+    "words": [
+      { "word": "Tiger", "hint": "Stripes", "word_ne": "बाघ", "hint_ne": "धर्का" },
+      { "word": "One-Horned Rhino", "hint": "Chitwan", "word_ne": "एकसिङ्गे गैँडा", "hint_ne": "चितवन" },
+      { "word": "Snow Leopard", "hint": "Himalaya", "word_ne": "हिउँ चितुवा", "hint_ne": "हिमाल" },
+      { "word": "Red Panda", "hint": "Bamboo", "word_ne": "रातो पाण्डा", "hint_ne": "बाँस" },
+      { "word": "Yak", "hint": "Mountain", "word_ne": "याक", "hint_ne": "हिमाली" },
+      { "word": "Asian Elephant", "hint": "Tusks", "word_ne": "एसियाली हात्ती", "hint_ne": "दाह्रा" },
+      { "word": "Musk Deer", "hint": "Himalayan", "word_ne": "कस्तुरी मृग", "hint_ne": "हिमाली" },
+      { "word": "Danphe", "hint": "National bird", "word_ne": "डाँफे", "hint_ne": "राष्ट्रिय चरा" },
+      { "word": "Gharial", "hint": "Long snout", "word_ne": "घडियाल", "hint_ne": "लामो थुतुनो" },
+      { "word": "Langur", "hint": "Monkey", "word_ne": "लंगुर", "hint_ne": "बाँदर" },
+      { "word": "Wild Boar", "hint": "Tusk", "word_ne": "बँदेल", "hint_ne": "दाह्रा" },
+      { "word": "Himalayan Black Bear", "hint": "Forest", "word_ne": "हिमाली कालो भालु", "hint_ne": "जंगल" },
+      { "word": "Jackal", "hint": "Howl", "word_ne": "स्याल", "hint_ne": "कराउँछ" },
+      { "word": "Blue Sheep", "hint": "Cliff", "word_ne": "नाउर", "hint_ne": "भीर" },
+      { "word": "Peacock", "hint": "Feathers", "word_ne": "मयुर", "hint_ne": "प्वाँख" }
+    ]
   }
 ]

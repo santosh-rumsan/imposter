@@ -73,6 +73,14 @@ function RevealScreen() {
           </div>
         ) : (
           <div className="animate-scale-in flex flex-col gap-4">
+            {/* Category above card (non-imposter only) */}
+            {!player.isImposter && (
+              <div className="text-center">
+                <p className="text-white/40 text-xs uppercase tracking-widest mb-1">{t('reveal', 'category')}</p>
+                <p className="text-3xl font-black text-purple-300 tracking-wide">{localizedCategory}</p>
+              </div>
+            )}
+
             {/* Word/Imposter card */}
             {player.isImposter ? (
               <div className="w-full rounded-2xl bg-[#1a0a0a] border-2 border-red-500 glow-red flex items-center justify-center py-14">
@@ -81,10 +89,7 @@ function RevealScreen() {
                 </span>
               </div>
             ) : (
-              <div className="w-full rounded-2xl bg-[#151829] border border-white/10 flex flex-col items-center justify-center py-14 gap-3">
-                <p className="text-[#8b8fa8] text-sm">
-                  {t('reveal', 'category')}: {localizedCategory}
-                </p>
+              <div className="w-full rounded-2xl bg-[#151829] border border-white/10 flex items-center justify-center py-14">
                 <span className="text-4xl font-black text-cyan-400 tracking-wide text-center px-4">
                   {localizedWord}
                 </span>

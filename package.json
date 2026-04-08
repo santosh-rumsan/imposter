@@ -9,7 +9,8 @@
     "dev": "vite dev --port 5555",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "deploy": "vite build && wrangler pages deploy"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -46,12 +47,14 @@
     "vite": "^7.3.1",
     "vite-plugin-pwa": "^1.2.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.5"
+    "vitest": "^3.0.5",
+    "wrangler": "^3.114.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "lightningcss"
+      "lightningcss",
+      "workerd"
     ]
   },
   "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8"
