@@ -45,6 +45,9 @@ function RevealScreen() {
 
   const showHint = player.isImposter && settings.showHintToImposter && game.hint
   const showCategory = player.isImposter && settings.showCategoryToImposter
+  const otherImposters = player.isImposter && settings.impostersKnowEachOther
+    ? game.players.filter((p) => p.isImposter && p.id !== playerId)
+    : []
 
   // Localized word/hint/category for this player's language
   const localizedWord = game.secretWordLocalized?.[lang] ?? game.secretWord
@@ -64,7 +67,7 @@ function RevealScreen() {
       <div className="flex-1 flex flex-col justify-center gap-5">
         {/* Main card */}
         {!revealed ? (
-          <div className="animate-scale-in">
+          <div>
             <ParticleCard onClick={handleReveal} />
             <p className="text-center text-cyan-400 text-sm mt-4 font-medium flex items-center justify-center gap-2">
               <span>👆</span>
@@ -72,7 +75,7 @@ function RevealScreen() {
             </p>
           </div>
         ) : (
-          <div className="animate-scale-in flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             {/* Category above card (non-imposter only) */}
             {!player.isImposter && (
               <div className="text-center">
@@ -115,6 +118,26 @@ function RevealScreen() {
                 </div>
                 <p className="text-white text-2xl font-black text-center tracking-widest mb-2">{localizedHint}</p>
                 <p className="text-white/50 text-xs text-center">{t('reveal', 'clueHint')}</p>
+              </div>
+            )}
+
+            {/* Other imposters (know each other) */}
+            {otherImposters.length > 0 && (
+              <div className="bg-[#1a0a0a] border border-red-500/40 rounded-2xl px-5 py-4">
+                <div className="flex items-center gap-2 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f87171" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                  <span className="text-red-400 font-semibold text-sm">Your fellow imposters</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  {otherImposters.map((imp) => (
+                    <div key={imp.id} className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-red-500" />
+                      <span className="text-white font-bold">{imp.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>

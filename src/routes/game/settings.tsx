@@ -52,11 +52,18 @@ function Toggle({
 
 export default function GameSettingsScreen() {
   const navigate = useNavigate()
-  const [settings, setSettings] = useState<Settings>(() => getSettings())
   const players = getPlayers()
+  const [settings, setSettings] = useState<Settings>(() => {
+    const s = getSettings()
+    if (s.imposterCountOverride === null) {
+      return { ...s, imposterCountOverride: getImposterCount(players.length, null) }
+    }
+    return s
+  })
   const { t } = useTranslation(settings.defaultLanguage)
 
-  const imposterCount = getImposterCount(players.length, settings.imposterCountOverride)
+  const maxImposters = Math.max(1, Math.floor(players.length / 2))
+  const imposterCount = Math.max(1, Math.min(settings.imposterCountOverride ?? 1, maxImposters))
 
   function update<K extends keyof Settings>(key: K, value: Settings[K]) {
     const updated = { ...settings, [key]: value }
@@ -115,7 +122,19 @@ export default function GameSettingsScreen() {
               </svg>
             </div>
             <p className="text-[#8b8fa8] text-xs">{t('settings', 'howManyImposters')}</p>
-            <p className="text-white text-3xl font-black">{imposterCount}</p>
+            <div className="flex items-center gap-2 mt-1">
+              <button
+                onClick={() => update('imposterCountOverride', Math.max(1, imposterCount - 1))}
+                disabled={imposterCount <= 1}
+                className="w-7 h-7 rounded-lg bg-white/10 text-white font-bold text-lg flex items-center justify-center disabled:opacity-30 active:scale-95 transition-all"
+              >−</button>
+              <p className="text-white text-3xl font-black w-8 text-center">{imposterCount}</p>
+              <button
+                onClick={() => update('imposterCountOverride', Math.min(maxImposters, imposterCount + 1))}
+                disabled={imposterCount >= maxImposters}
+                className="w-7 h-7 rounded-lg bg-white/10 text-white font-bold text-lg flex items-center justify-center disabled:opacity-30 active:scale-95 transition-all"
+              >+</button>
+            </div>
           </div>
         </div>
 
@@ -183,12 +202,14 @@ export default function GameSettingsScreen() {
               label={t('settings', 'showHintToImposter')}
               icon={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>}
             />
-            <Toggle
-              checked={settings.impostersKnowEachOther}
-              onChange={(v) => update('impostersKnowEachOther', v)}
-              label={t('settings', 'impostersKnowEachOther')}
-              icon={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>}
-            />
+            {imposterCount >= 2 && (
+              <Toggle
+                checked={settings.impostersKnowEachOther}
+                onChange={(v) => update('impostersKnowEachOther', v)}
+                label={t('settings', 'impostersKnowEachOther')}
+                icon={<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>}
+              />
+            )}
           </div>
         </div>
 

@@ -29,7 +29,7 @@ function ResultsScreen() {
     const isVerbal = settings.votingMode === 'verbal' && Object.keys(game.votes).length === 0
     recordGameResult(game, isVerbal ? false : imposterWins, getPlayers())
     setRecorded(true)
-    setTimeout(() => setShowDetails(true), 600)
+    setShowDetails(true)
   }, [game])
 
   if (!game) {
