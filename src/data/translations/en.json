@@ -1,0 +1,132 @@
+{
+  "home": {
+    "subtitle": "Word Game",
+    "tagline": "A party game of hidden ideas & cunning clues",
+    "getStarted": "Get Started",
+    "howToPlay": "How to Play"
+  },
+  "players": {
+    "title": "Player Names",
+    "addPlayer": "Add Player",
+    "remove": "Remove",
+    "add": "Add",
+    "playerCount": "Players",
+    "range": "3-12",
+    "namePlaceholder": "Enter name",
+    "language": "Language",
+    "english": "English",
+    "nepali": "Nepali",
+    "cancel": "Cancel",
+    "noPlayers": "No players yet",
+    "addFirst": "Add at least 3 players to start",
+    "next": "Next"
+  },
+  "settings": {
+    "title": "Game Settings",
+    "howManyPlayers": "How many players?",
+    "howManyImposters": "How many imposters?",
+    "gameMode": "Game Mode",
+    "wordGame": "Word Game",
+    "wordGameDesc": "Find who doesn't know the secret word",
+    "questionGame": "Question Game",
+    "questionGameDesc": "Coming soon",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "showCategoryToImposter": "Show Category to Imposter",
+    "showHintToImposter": "Show Hint to Imposter",
+    "impostersKnowEachOther": "Imposters Know Each Other",
+    "region": "Region",
+    "us": "US",
+    "nepal": "Nepal",
+    "world": "World",
+    "timer": "Discussion Timer",
+    "timerDuration": "Timer Duration",
+    "minutes": "min",
+    "votingMode": "Voting Mode",
+    "inApp": "In-App Voting",
+    "verbal": "Verbal Voting",
+    "startGame": "Start Game",
+    "defaultLanguage": "Default Language",
+    "auto": "Auto"
+  },
+  "play": {
+    "title": "Players",
+    "instruction": "Tap your name to reveal your word, then pass the device to the next player.",
+    "allRevealed": "All players have seen their word!",
+    "startDiscussion": "Start Discussion"
+  },
+  "reveal": {
+    "wordFor": "The word for",
+    "tapToReveal": "Tap the box to reveal",
+    "gotIt": "Got it!",
+    "imposter": "Imposter",
+    "yourClue": "Your Clue",
+    "clueHint": "Use this in the first round to blend in!",
+    "citizen": "Citizen",
+    "category": "Category"
+  },
+  "discussion": {
+    "title": "Discussion Time!",
+    "category": "Category",
+    "instruction": "Discuss and find the Imposter! Ask questions about the secret word.",
+    "goToVote": "Go to Vote",
+    "timeUp": "Time's Up!"
+  },
+  "vote": {
+    "title": "Vote",
+    "instruction": "Who do you think is the Imposter?",
+    "passInstruction": "Pass to",
+    "confirmVote": "Confirm Vote",
+    "skipVote": "Skip (Verbal)",
+    "votedFor": "voted for",
+    "revealResults": "Reveal Results",
+    "allVoted": "All players have voted!"
+  },
+  "results": {
+    "title": "Results",
+    "imposterWins": "Imposter Wins!",
+    "citizensWin": "Citizens Win!",
+    "theImposterwas": "The Imposter was",
+    "theImpostersWere": "The Imposters were",
+    "secretWord": "Secret Word",
+    "votes": "Votes",
+    "playAgain": "Play Again",
+    "newGame": "New Game"
+  },
+  "howToPlay": {
+    "title": "How to Play",
+    "step1Title": "Add Players",
+    "step1Desc": "Add 3-12 players and choose each player's language.",
+    "step2Title": "Choose Settings",
+    "step2Desc": "Pick a region and adjust game settings like timer and categories.",
+    "step3Title": "Reveal Your Word",
+    "step3Desc": "Pass the phone around. Each player taps to secretly see their word.",
+    "step4Title": "Imposters Are Different",
+    "step4Desc": "Citizens see the secret word. Imposters only see 'Imposter' (with an optional clue).",
+    "step5Title": "Discuss",
+    "step5Desc": "Ask questions! Citizens try to find the Imposter. Imposters try to blend in.",
+    "step6Title": "Vote",
+    "step6Desc": "Vote on who you think the Imposter is. The majority rules!",
+    "step7Title": "Reveal",
+    "step7Desc": "Find out if the Imposter was caught or escaped!"
+  },
+  "stats": {
+    "title": "Stats",
+    "totalGames": "Total Games",
+    "gamesPlayed": "Games",
+    "timesImposter": "Times Imposter",
+    "timesCaught": "Times Caught",
+    "timesSurvived": "Survived",
+    "clearStats": "Clear Stats",
+    "confirmClear": "Are you sure? This will delete all stats.",
+    "noStats": "No games played yet!",
+    "playerStats": "Player Stats"
+  },
+  "common": {
+    "back": "Back",
+    "settings": "Settings",
+    "done": "Done",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  }
+}

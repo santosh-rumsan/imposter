@@ -1,0 +1,9 @@
+{
+  "servers": [
+    {
+      "id": "a3pizbuf",
+      "command": "npx vite dev --port 5555",
+      "port": 5555
+    }
+  ]
+}

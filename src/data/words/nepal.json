@@ -1,0 +1,141 @@
+[
+  {
+    "category": "खाना / Food",
+    "category_ne": "खाना",
+    "words": [
+      { "word": "Momo", "hint": "Dumpling", "word_ne": "मोमो", "hint_ne": "पकौडा" },
+      { "word": "Dal Bhat", "hint": "Lentils", "word_ne": "दाल भात", "hint_ne": "तरकारी" },
+      { "word": "Sel Roti", "hint": "Sweet", "word_ne": "सेल रोटी", "hint_ne": "चिनी" },
+      { "word": "Chatamari", "hint": "Flour", "word_ne": "चटामरी", "hint_ne": "पिठो" },
+      { "word": "Yomari", "hint": "Sesame", "word_ne": "योमरी", "hint_ne": "तिल" },
+      { "word": "Gundruk", "hint": "Greens", "word_ne": "गुन्द्रुक", "hint_ne": "साग" },
+      { "word": "Thukpa", "hint": "Noodles", "word_ne": "थुक्पा", "hint_ne": "नुडल्स" },
+      { "word": "Dhido", "hint": "Millet", "word_ne": "ढिडो", "hint_ne": "कोदो" },
+      { "word": "Samay Baji", "hint": "Beaten rice", "word_ne": "समय बाजी", "hint_ne": "चिउरा" },
+      { "word": "Chiura", "hint": "Dry", "word_ne": "चिउरा", "hint_ne": "सुक्खा" },
+      { "word": "Kheer", "hint": "Milk", "word_ne": "खिर", "hint_ne": "दूध" },
+      { "word": "Alu Tama", "hint": "Bamboo", "word_ne": "आलु तामा", "hint_ne": "बाँस" },
+      { "word": "Sekuwa", "hint": "Meat", "word_ne": "सेकुवा", "hint_ne": "मासु" },
+      { "word": "Bhatmas", "hint": "Roasted", "word_ne": "भट्मास", "hint_ne": "भाजेको" },
+      { "word": "Lapsi", "hint": "Sour", "word_ne": "लप्सी", "hint_ne": "अमिलो" },
+      { "word": "Jeri", "hint": "Sweet", "word_ne": "जेरी", "hint_ne": "मीठो" },
+      { "word": "Kachila", "hint": "Raw", "word_ne": "कचिला", "hint_ne": "कच्चो" }
+    ]
+  },
+  {
+    "category": "ठाउँहरू / Places",
+    "category_ne": "ठाउँहरू",
+    "words": [
+      { "word": "Pashupatinath", "hint": "Temple", "word_ne": "पशुपतिनाथ", "hint_ne": "मन्दिर" },
+      { "word": "Swayambhunath", "hint": "Buddhist", "word_ne": "स्वयम्भूनाथ", "hint_ne": "बौद्ध" },
+      { "word": "Lumbini", "hint": "Buddha", "word_ne": "लुम्बिनी", "hint_ne": "बुद्ध" },
+      { "word": "Phewa Lake", "hint": "Pokhara", "word_ne": "फेवा ताल", "hint_ne": "पोखरा" },
+      { "word": "Everest", "hint": "Mountain", "word_ne": "एभरेस्ट", "hint_ne": "हिमाल" },
+      { "word": "Bhaktapur Durbar", "hint": "Ancient", "word_ne": "भक्तपुर दरबार", "hint_ne": "प्राचीन" },
+      { "word": "Boudhanath", "hint": "Stupa", "word_ne": "बौद्धनाथ", "hint_ne": "स्तूप" },
+      { "word": "Chitwan", "hint": "Jungle", "word_ne": "चितवन", "hint_ne": "जंगल" },
+      { "word": "Janakpur", "hint": "Sita", "word_ne": "जनकपुर", "hint_ne": "सीता" },
+      { "word": "Mustang", "hint": "Desert", "word_ne": "मुस्ताङ", "hint_ne": "मरुभूमि" },
+      { "word": "Rara Lake", "hint": "Blue", "word_ne": "रारा ताल", "hint_ne": "नीलो" },
+      { "word": "Patan Durbar", "hint": "Lalitpur", "word_ne": "पाटन दरबार", "hint_ne": "ललितपुर" },
+      { "word": "Hanuman Dhoka", "hint": "Kathmandu", "word_ne": "हनुमान ढोका", "hint_ne": "काठमाडौं" },
+      { "word": "Kalapathar", "hint": "View", "word_ne": "कालापत्थर", "hint_ne": "दृश्य" },
+      { "word": "Gosaikunda", "hint": "Sacred", "word_ne": "गोसाइँकुण्ड", "hint_ne": "पवित्र" },
+      { "word": "Ilam", "hint": "Tea", "word_ne": "इलाम", "hint_ne": "चिया" }
+    ]
+  },
+  {
+    "category": "चाडपर्व / Festivals",
+    "category_ne": "चाडपर्व",
+    "words": [
+      { "word": "Dashain", "hint": "Tika", "word_ne": "दशैं", "hint_ne": "टीका" },
+      { "word": "Tihar", "hint": "Lamp", "word_ne": "तिहार", "hint_ne": "दियो" },
+      { "word": "Holi", "hint": "Colors", "word_ne": "होली", "hint_ne": "रंग" },
+      { "word": "Indra Jatra", "hint": "Kumari", "word_ne": "इन्द्र जात्रा", "hint_ne": "कुमारी" },
+      { "word": "Chhath", "hint": "Sun", "word_ne": "छठ", "hint_ne": "सूर्य" },
+      { "word": "Teej", "hint": "Fasting", "word_ne": "तीज", "hint_ne": "व्रत" },
+      { "word": "Buddha Jayanti", "hint": "Peace", "word_ne": "बुद्ध जयन्ती", "hint_ne": "शान्ति" },
+      { "word": "Maghe Sankranti", "hint": "Beaten rice", "word_ne": "मागे सक्रान्ति", "hint_ne": "चिउरा" },
+      { "word": "Gai Jatra", "hint": "Cow", "word_ne": "गाई जात्रा", "hint_ne": "गाई" },
+      { "word": "National Unity Day", "hint": "Prithvi", "word_ne": "राष्ट्रिय एकता दिवस", "hint_ne": "पृथ्वी" },
+      { "word": "Losar", "hint": "New Year", "word_ne": "लोसार", "hint_ne": "नयाँ वर्ष" },
+      { "word": "Shivaratri", "hint": "Shiva", "word_ne": "शिवरात्री", "hint_ne": "शिव" },
+      { "word": "Navratri", "hint": "Goddess", "word_ne": "नवरात्री", "hint_ne": "देवी" },
+      { "word": "Krishna Janmashtami", "hint": "Butter", "word_ne": "कृष्ण जन्माष्टमी", "hint_ne": "माखन" }
+    ]
+  },
+  {
+    "category": "प्रसिद्ध व्यक्तित्व / Famous People",
+    "category_ne": "प्रसिद्ध व्यक्तित्व",
+    "words": [
+      { "word": "Tenzing Norgay", "hint": "Everest", "word_ne": "तेन्जिङ नोर्गे", "hint_ne": "एभरेस्ट" },
+      { "word": "Laxmiprasad Devkota", "hint": "Muna Madan", "word_ne": "लक्ष्मीप्रसाद देवकोटा", "hint_ne": "मुनामदन" },
+      { "word": "Paras Khadka", "hint": "Cricket", "word_ne": "पारस खड्का", "hint_ne": "क्रिकेट" },
+      { "word": "Prithvi Narayan Shah", "hint": "Unification", "word_ne": "पृथ्वीनारायण शाह", "hint_ne": "एकीकरण" },
+      { "word": "Bhimsen Thapa", "hint": "Chief", "word_ne": "भीमसेन थापा", "hint_ne": "मुखिया" },
+      { "word": "BP Koirala", "hint": "Democracy", "word_ne": "बिपी कोइराला", "hint_ne": "प्रजातन्त्र" },
+      { "word": "Arniko", "hint": "Pagoda", "word_ne": "अरनिको", "hint_ne": "पगोडा" },
+      { "word": "Motiram Bhatta", "hint": "Literature", "word_ne": "मोतीराम भट्ट", "hint_ne": "साहित्य" },
+      { "word": "Deepika Padukone", "hint": "Bollywood", "word_ne": "दीपिका पादुकोण", "hint_ne": "बलिउड" },
+      { "word": "Manisha Koirala", "hint": "Actress", "word_ne": "मनिषा कोइराला", "hint_ne": "अभिनेत्री" },
+      { "word": "Rajesh Hamal", "hint": "Hero", "word_ne": "राजेश हमाल", "hint_ne": "हिरो" },
+      { "word": "Sangeeta Thapa", "hint": "Singer", "word_ne": "संगीता थापा", "hint_ne": "गायिका" },
+      { "word": "Narayan Gopal", "hint": "Melody King", "word_ne": "नारायण गोपाल", "hint_ne": "सुर सम्राट" }
+    ]
+  },
+  {
+    "category": "खेल / Sports",
+    "category_ne": "खेलकुद",
+    "words": [
+      { "word": "Cricket", "hint": "Bat", "word_ne": "क्रिकेट", "hint_ne": "ब्याट" },
+      { "word": "Football", "hint": "Goal", "word_ne": "फुटबल", "hint_ne": "गोल" },
+      { "word": "Kabaddi", "hint": "Breath", "word_ne": "कबड्डी", "hint_ne": "दम" },
+      { "word": "Dandi Biyo", "hint": "Traditional", "word_ne": "दाँडी बियो", "hint_ne": "पारम्परिक" },
+      { "word": "Volleyball", "hint": "Net", "word_ne": "भलिबल", "hint_ne": "जाल" },
+      { "word": "Basketball", "hint": "Basket", "word_ne": "बास्केटबल", "hint_ne": "टोकरी" },
+      { "word": "Taekwondo", "hint": "Kick", "word_ne": "ताइक्वान्दो", "hint_ne": "लात" },
+      { "word": "Boxing", "hint": "Punch", "word_ne": "बक्सिङ", "hint_ne": "पञ्च" },
+      { "word": "Badminton", "hint": "Shuttle", "word_ne": "ब्याडमिन्टन", "hint_ne": "शटल" },
+      { "word": "Tennis", "hint": "Racket", "word_ne": "टेनिस", "hint_ne": "रकेट" },
+      { "word": "Kho Kho", "hint": "Chase", "word_ne": "खो खो", "hint_ne": "दौड" },
+      { "word": "Mountaineering", "hint": "Summit", "word_ne": "माउन्टेनियरिङ", "hint_ne": "हिमाल" }
+    ]
+  },
+  {
+    "category": "दैनिक वस्तुहरू / Everyday Objects",
+    "category_ne": "दैनिक वस्तुहरू",
+    "words": [
+      { "word": "Khukuri", "hint": "Sharp", "word_ne": "खुकुरी", "hint_ne": "धारिलो" },
+      { "word": "Dhara", "hint": "Water", "word_ne": "धारा", "hint_ne": "पानी" },
+      { "word": "Dhiki", "hint": "Grinder", "word_ne": "ढिकी", "hint_ne": "जाँतो" },
+      { "word": "Copper Pot", "hint": "Metal", "word_ne": "तामाको भाँडो", "hint_ne": "धातु" },
+      { "word": "Nanglo", "hint": "Bamboo", "word_ne": "नाङ्लो", "hint_ne": "बाँस" },
+      { "word": "Daura Suruwal", "hint": "National", "word_ne": "दौरा सुरुवाल", "hint_ne": "राष्ट्रिय" },
+      { "word": "Dhaka Topi", "hint": "Cap", "word_ne": "टोपी", "hint_ne": "ढाकाको" },
+      { "word": "Whetstone", "hint": "Sharpen", "word_ne": "पानी ढुंगा", "hint_ne": "तिखार" },
+      { "word": "Bamboo Umbrella", "hint": "Rain", "word_ne": "तिनपाते छाता", "hint_ne": "वर्षा" },
+      { "word": "Clay Pot", "hint": "Potter", "word_ne": "माटोको भाँडो", "hint_ne": "कुम्हाले" },
+      { "word": "Window", "hint": "Door", "word_ne": "झ्याल", "hint_ne": "ढोका" },
+      { "word": "Corn Bread", "hint": "Ground", "word_ne": "मकैको रोटी", "hint_ne": "ढिकीमा" },
+      { "word": "Lota", "hint": "Flour", "word_ne": "लोटा", "hint_ne": "पिठो" }
+    ]
+  },
+  {
+    "category": "प्रकृति / Nature",
+    "category_ne": "प्रकृति",
+    "words": [
+      { "word": "Himalaya", "hint": "Snow", "word_ne": "हिमाल", "hint_ne": "बरफ" },
+      { "word": "Forest", "hint": "Tree", "word_ne": "जंगल", "hint_ne": "रुख" },
+      { "word": "River", "hint": "Flowing", "word_ne": "खोला", "hint_ne": "बग्ने" },
+      { "word": "Tiger", "hint": "Chitwan", "word_ne": "बाघ", "hint_ne": "चितवन" },
+      { "word": "Rhinoceros", "hint": "Horn", "word_ne": "गैंडा", "hint_ne": "सींग" },
+      { "word": "Elephant", "hint": "Trunk", "word_ne": "हात्ती", "hint_ne": "सुँड" },
+      { "word": "Danfe", "hint": "National Bird", "word_ne": "मोनाल", "hint_ne": "राष्ट्रिय चरा" },
+      { "word": "Rhododendron", "hint": "National Flower", "word_ne": "लालीगुराँस", "hint_ne": "राष्ट्रिय फूल" },
+      { "word": "Snow", "hint": "White", "word_ne": "हिउँ", "hint_ne": "सेतो" },
+      { "word": "Monsoon", "hint": "Rain", "word_ne": "मनसुन", "hint_ne": "वर्षा" },
+      { "word": "Earthquake", "hint": "Shaking", "word_ne": "भूकम्प", "hint_ne": "हल्लिने" },
+      { "word": "Waterfall", "hint": "Water", "word_ne": "झरना", "hint_ne": "पानी" }
+    ]
+  }
+]

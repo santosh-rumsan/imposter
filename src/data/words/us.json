@@ -1,0 +1,154 @@
+[
+  {
+    "category": "Food",
+    "category_ne": "खाना",
+    "words": [
+      { "word": "Hamburger", "hint": "Bun", "word_ne": "ह्याम्बर्गर", "hint_ne": "बन" },
+      { "word": "Hot Dog", "hint": "Ketchup", "word_ne": "हट डग", "hint_ne": "केचप" },
+      { "word": "Mac and Cheese", "hint": "Pasta", "word_ne": "म्याक एन्ड चिज", "hint_ne": "पास्ता" },
+      { "word": "Apple Pie", "hint": "Crust", "word_ne": "स्याउको पाइ", "hint_ne": "क्रस्ट" },
+      { "word": "BBQ Ribs", "hint": "Grill", "word_ne": "बीबीक्यू रिब्स", "hint_ne": "ग्रिल" },
+      { "word": "Clam Chowder", "hint": "Soup", "word_ne": "क्ल्याम चाउडर", "hint_ne": "सुप" },
+      { "word": "Buffalo Wings", "hint": "Sauce", "word_ne": "बफेलो विङ्स", "hint_ne": "सस" },
+      { "word": "Cheesesteak", "hint": "Sandwich", "word_ne": "चिजस्टेक", "hint_ne": "स्यान्डविच" },
+      { "word": "Biscuits and Gravy", "hint": "Breakfast", "word_ne": "बिस्किट र ग्रेभी", "hint_ne": "बिहानको खाना" },
+      { "word": "Corn Dog", "hint": "Fair", "word_ne": "कर्न डग", "hint_ne": "मेला" },
+      { "word": "Lobster Roll", "hint": "Seafood", "word_ne": "लबस्टर रोल", "hint_ne": "समुद्री खाना" },
+      { "word": "Pancakes", "hint": "Syrup", "word_ne": "प्यान्केक", "hint_ne": "सिरप" },
+      { "word": "Pulled Pork", "hint": "Smoky", "word_ne": "पुल्ड पोर्क", "hint_ne": "धुवाँ" },
+      { "word": "Key Lime Pie", "hint": "Florida", "word_ne": "की लाइम पाइ", "hint_ne": "फ्लोरिडा" },
+      { "word": "Banana Split", "hint": "Ice Cream", "word_ne": "केरा स्प्लिट", "hint_ne": "आइसक्रिम" },
+      { "word": "Grilled Cheese", "hint": "Melted", "word_ne": "ग्रिल्ड चिज", "hint_ne": "पगलेको" },
+      { "word": "Chicken Pot Pie", "hint": "Pastry", "word_ne": "चिकन पट पाइ", "hint_ne": "पेस्ट्री" },
+      { "word": "Nachos", "hint": "Chips", "word_ne": "नाचोस", "hint_ne": "चिप्स" }
+    ]
+  },
+  {
+    "category": "Places",
+    "category_ne": "ठाउँहरू",
+    "words": [
+      { "word": "Statue of Liberty", "hint": "Torch", "word_ne": "स्वतन्त्रताको मूर्ति", "hint_ne": "मशाल" },
+      { "word": "Grand Canyon", "hint": "Colorado", "word_ne": "ग्र्यान्ड क्यान्योन", "hint_ne": "कोलोराडो" },
+      { "word": "Times Square", "hint": "Broadway", "word_ne": "टाइम्स स्क्वायर", "hint_ne": "ब्रडवे" },
+      { "word": "Hollywood", "hint": "Stars", "word_ne": "हलिउड", "hint_ne": "तारा" },
+      { "word": "Yellowstone", "hint": "Geyser", "word_ne": "येलोस्टोन", "hint_ne": "गेजर" },
+      { "word": "Las Vegas Strip", "hint": "Casino", "word_ne": "लास भेगास स्ट्रिप", "hint_ne": "क्यासिनो" },
+      { "word": "Mount Rushmore", "hint": "Presidents", "word_ne": "माउन्ट रसमोर", "hint_ne": "राष्ट्रपति" },
+      { "word": "Golden Gate Bridge", "hint": "San Francisco", "word_ne": "गोल्डेन गेट ब्रिज", "hint_ne": "स्यान फ्रान्सिस्को" },
+      { "word": "Niagara Falls", "hint": "Waterfall", "word_ne": "नायाग्रा झरना", "hint_ne": "झरना" },
+      { "word": "Disneyland", "hint": "Mickey", "word_ne": "डिज्नील्यान्ड", "hint_ne": "मिकी" },
+      { "word": "White House", "hint": "President", "word_ne": "ह्वाइट हाउस", "hint_ne": "राष्ट्रपति" },
+      { "word": "Empire State Building", "hint": "Skyscraper", "word_ne": "एम्पायर स्टेट बिल्डिङ", "hint_ne": "गगनचुम्बी" },
+      { "word": "Central Park", "hint": "Manhattan", "word_ne": "सेन्ट्रल पार्क", "hint_ne": "म्यान्हट्टन" },
+      { "word": "Monument Valley", "hint": "Desert", "word_ne": "मोन्युमेन्ट भ्याली", "hint_ne": "मरुभूमि" },
+      { "word": "Cape Canaveral", "hint": "Rocket", "word_ne": "केप क्यानाभेरल", "hint_ne": "रकेट" },
+      { "word": "Graceland", "hint": "Elvis", "word_ne": "ग्रेसल्यान्ड", "hint_ne": "एल्भिस" },
+      { "word": "Alcatraz", "hint": "Prison", "word_ne": "अल्काट्राज", "hint_ne": "जेल" }
+    ]
+  },
+  {
+    "category": "Festivals",
+    "category_ne": "चाडपर्व",
+    "words": [
+      { "word": "Thanksgiving", "hint": "Turkey", "word_ne": "थ्याङ्क्सगिभिङ", "hint_ne": "टर्की" },
+      { "word": "Fourth of July", "hint": "Fireworks", "word_ne": "जुलाई चार", "hint_ne": "आतिशबाजी" },
+      { "word": "Halloween", "hint": "Costume", "word_ne": "ह्यालोवीन", "hint_ne": "भेष" },
+      { "word": "Super Bowl Sunday", "hint": "Football", "word_ne": "सुपर बाउल", "hint_ne": "फुटबल" },
+      { "word": "Mardi Gras", "hint": "Beads", "word_ne": "मार्डी ग्रा", "hint_ne": "मनका" },
+      { "word": "Memorial Day", "hint": "Veterans", "word_ne": "मेमोरियल डे", "hint_ne": "सैनिक" },
+      { "word": "Labor Day", "hint": "Weekend", "word_ne": "लेबर डे", "hint_ne": "सप्ताहान्त" },
+      { "word": "Black Friday", "hint": "Shopping", "word_ne": "ब्ल्याक फ्राइडे", "hint_ne": "किनमेल" },
+      { "word": "Prom Night", "hint": "Dance", "word_ne": "प्रम नाइट", "hint_ne": "नृत्य" },
+      { "word": "Homecoming", "hint": "Parade", "word_ne": "होमकमिङ", "hint_ne": "परेड" },
+      { "word": "County Fair", "hint": "Rides", "word_ne": "काउन्टी मेला", "hint_ne": "राइड" },
+      { "word": "Coachella", "hint": "Music", "word_ne": "कोचेला", "hint_ne": "सङ्गीत" },
+      { "word": "New Year's Eve", "hint": "Countdown", "word_ne": "नयाँ वर्षको साँझ", "hint_ne": "काउन्टडाउन" },
+      { "word": "Christmas", "hint": "Santa", "word_ne": "क्रिसमस", "hint_ne": "सान्टा" },
+      { "word": "Spring Break", "hint": "Beach", "word_ne": "स्प्रिङ ब्रेक", "hint_ne": "बिच" }
+    ]
+  },
+  {
+    "category": "Famous People",
+    "category_ne": "प्रसिद्ध व्यक्तित्व",
+    "words": [
+      { "word": "Abraham Lincoln", "hint": "Gettysburg", "word_ne": "अब्राहम लिंकन", "hint_ne": "गेटिसबर्ग" },
+      { "word": "Beyoncé", "hint": "Lemonade", "word_ne": "बियोन्से", "hint_ne": "लेमनेड" },
+      { "word": "Michael Jordan", "hint": "Slam Dunk", "word_ne": "माइकल जोर्डन", "hint_ne": "स्ल्याम डंक" },
+      { "word": "Elon Musk", "hint": "Tesla", "word_ne": "एलन मस्क", "hint_ne": "टेस्ला" },
+      { "word": "Martin Luther King Jr.", "hint": "Dream", "word_ne": "मार्टिन लुथर किंग", "hint_ne": "सपना" },
+      { "word": "Oprah Winfrey", "hint": "Talk Show", "word_ne": "ओप्रा विन्फ्री", "hint_ne": "टक शो" },
+      { "word": "Taylor Swift", "hint": "Albums", "word_ne": "टेलर स्विफ्ट", "hint_ne": "एल्बम" },
+      { "word": "LeBron James", "hint": "Lakers", "word_ne": "लेब्रन जेम्स", "hint_ne": "लेकर्स" },
+      { "word": "Steve Jobs", "hint": "Apple", "word_ne": "स्टिभ जब्स", "hint_ne": "एप्पल" },
+      { "word": "Elvis Presley", "hint": "Rock", "word_ne": "एल्भिस प्रेस्ली", "hint_ne": "रक" },
+      { "word": "Marilyn Monroe", "hint": "Hollywood", "word_ne": "मेरिलिन मनरो", "hint_ne": "हलिउड" },
+      { "word": "Franklin Roosevelt", "hint": "New Deal", "word_ne": "फ्र्यांकलिन रूजभेल्ट", "hint_ne": "न्यु डिल" },
+      { "word": "Neil Armstrong", "hint": "Moon", "word_ne": "नील आर्मस्ट्रङ", "hint_ne": "चन्द्रमा" },
+      { "word": "Mark Zuckerberg", "hint": "Facebook", "word_ne": "मार्क जुकरबर्ग", "hint_ne": "फेसबुक" },
+      { "word": "Kobe Bryant", "hint": "Mamba", "word_ne": "कोबे ब्रायन्ट", "hint_ne": "म्याम्बा" }
+    ]
+  },
+  {
+    "category": "Sports",
+    "category_ne": "खेलकुद",
+    "words": [
+      { "word": "Baseball", "hint": "Innings", "word_ne": "बेसबल", "hint_ne": "इनिङ" },
+      { "word": "American Football", "hint": "Touchdown", "word_ne": "अमेरिकन फुटबल", "hint_ne": "टचडाउन" },
+      { "word": "Basketball", "hint": "Dribble", "word_ne": "बास्केटबल", "hint_ne": "ड्रिबल" },
+      { "word": "NASCAR", "hint": "Speedway", "word_ne": "नास्कार", "hint_ne": "स्पिडवे" },
+      { "word": "Ice Hockey", "hint": "Puck", "word_ne": "आइस हकी", "hint_ne": "पक" },
+      { "word": "Lacrosse", "hint": "Stick", "word_ne": "ल्याक्रोस", "hint_ne": "स्टिक" },
+      { "word": "Beach Volleyball", "hint": "Sand", "word_ne": "बिच भलिबल", "hint_ne": "बालुवा" },
+      { "word": "Skateboarding", "hint": "Tricks", "word_ne": "स्केटबोर्डिङ", "hint_ne": "ट्रिक्स" },
+      { "word": "Rodeo", "hint": "Bull", "word_ne": "रोडियो", "hint_ne": "साँढे" },
+      { "word": "Cheerleading", "hint": "Pom-Poms", "word_ne": "चियरलिडिङ", "hint_ne": "पम-पम" },
+      { "word": "Wrestling", "hint": "Ring", "word_ne": "कुस्ती", "hint_ne": "रिङ" },
+      { "word": "Ultimate Frisbee", "hint": "Disc", "word_ne": "अल्टिमेट फ्रिसबी", "hint_ne": "डिस्क" },
+      { "word": "Snowboarding", "hint": "Half-Pipe", "word_ne": "स्नोबोर्डिङ", "hint_ne": "ह्याफ-पाइप" },
+      { "word": "Surfing", "hint": "Waves", "word_ne": "सर्फिङ", "hint_ne": "छाल" },
+      { "word": "Track and Field", "hint": "Sprint", "word_ne": "ट्र्याक एन्ड फिल्ड", "hint_ne": "दौड" }
+    ]
+  },
+  {
+    "category": "TV & Movies",
+    "category_ne": "टिभी र चलचित्र",
+    "words": [
+      { "word": "Breaking Bad", "hint": "Chemistry", "word_ne": "ब्रेकिङ ब्याड", "hint_ne": "रसायन" },
+      { "word": "Friends", "hint": "Coffee", "word_ne": "फ्रेन्ड्स", "hint_ne": "कफी" },
+      { "word": "The Simpsons", "hint": "Springfield", "word_ne": "द सिम्प्सन्स", "hint_ne": "स्प्रिङफिल्ड" },
+      { "word": "Star Wars", "hint": "Force", "word_ne": "स्टार वार्स", "hint_ne": "शक्ति" },
+      { "word": "Avengers", "hint": "Marvel", "word_ne": "एभेन्जर्स", "hint_ne": "मार्भल" },
+      { "word": "Jurassic Park", "hint": "Dinosaur", "word_ne": "जुरासिक पार्क", "hint_ne": "डाइनोसर" },
+      { "word": "Game of Thrones", "hint": "Dragons", "word_ne": "गेम अफ थ्रोन्स", "hint_ne": "ड्रयागन" },
+      { "word": "Titanic", "hint": "Iceberg", "word_ne": "टाइटानिक", "hint_ne": "हिमखण्ड" },
+      { "word": "The Office", "hint": "Scranton", "word_ne": "द अफिस", "hint_ne": "स्क्र्यान्टन" },
+      { "word": "Stranger Things", "hint": "Upside Down", "word_ne": "स्ट्र्यान्जर थिङ्स", "hint_ne": "उल्टो संसार" },
+      { "word": "Home Alone", "hint": "Traps", "word_ne": "होम अलोन", "hint_ne": "पासो" },
+      { "word": "Forrest Gump", "hint": "Running", "word_ne": "फरेस्ट गम्प", "hint_ne": "दौड" },
+      { "word": "The Lion King", "hint": "Simba", "word_ne": "द लायन किङ", "hint_ne": "सिम्बा" },
+      { "word": "Mission Impossible", "hint": "Spy", "word_ne": "मिसन इम्पसिबल", "hint_ne": "जासूस" },
+      { "word": "Pulp Fiction", "hint": "Tarantino", "word_ne": "पल्प फिक्सन", "hint_ne": "तारान्टिनो" }
+    ]
+  },
+  {
+    "category": "Everyday Objects",
+    "category_ne": "दैनिक वस्तुहरू",
+    "words": [
+      { "word": "Pickup Truck", "hint": "Hauling", "word_ne": "पिकअप ट्रक", "hint_ne": "ढुवानी" },
+      { "word": "Red Solo Cup", "hint": "Party", "word_ne": "रेड सोलो कप", "hint_ne": "पार्टी" },
+      { "word": "Baseball Cap", "hint": "Brim", "word_ne": "बेसबल क्याप", "hint_ne": "छाना" },
+      { "word": "Blue Jeans", "hint": "Denim", "word_ne": "ब्लु जिन्स", "hint_ne": "डेनिम" },
+      { "word": "Cowboy Boots", "hint": "Spurs", "word_ne": "काउबोय बुट", "hint_ne": "स्पर" },
+      { "word": "Credit Card", "hint": "Swipe", "word_ne": "क्रेडिट कार्ड", "hint_ne": "स्वाइप" },
+      { "word": "Barbecue Grill", "hint": "Charcoal", "word_ne": "बार्बेक्यू ग्रिल", "hint_ne": "कोइला" },
+      { "word": "School Bus", "hint": "Yellow", "word_ne": "स्कुल बस", "hint_ne": "पहेँलो" },
+      { "word": "Mailbox", "hint": "Postal", "word_ne": "मेलबक्स", "hint_ne": "हुलाक" },
+      { "word": "Fire Hydrant", "hint": "Hose", "word_ne": "फायर हाइड्र्यान्ट", "hint_ne": "पाइप" },
+      { "word": "Lawn Mower", "hint": "Grass", "word_ne": "लन मोवर", "hint_ne": "घाँस" },
+      { "word": "Coffee Machine", "hint": "Espresso", "word_ne": "कफी मेसिन", "hint_ne": "एस्प्रेसो" },
+      { "word": "Drive-Thru", "hint": "Window", "word_ne": "ड्राइभ-थ्रु", "hint_ne": "झ्याल" },
+      { "word": "Dollar Bill", "hint": "Washington", "word_ne": "डलर नोट", "hint_ne": "वाशिंगटन" },
+      { "word": "Vending Machine", "hint": "Coins", "word_ne": "भेन्डिङ मेसिन", "hint_ne": "सिक्का" }
+    ]
+  }
+]
