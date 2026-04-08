@@ -1,0 +1,151 @@
+[
+  {
+    "category": "Food",
+    "category_ne": "खाना",
+    "words": [
+      { "word": "Sushi", "hint": "Raw fish", "word_ne": "सुशी", "hint_ne": "कच्चो माछा" },
+      { "word": "Pizza", "hint": "Dough", "word_ne": "पिज्जा", "hint_ne": "पिठो" },
+      { "word": "Croissant", "hint": "Buttery", "word_ne": "क्रोयसाँ", "hint_ne": "मक्खन" },
+      { "word": "Tacos", "hint": "Shell", "word_ne": "टाकोस", "hint_ne": "खोल" },
+      { "word": "Pad Thai", "hint": "Noodles", "word_ne": "प्याड थाई", "hint_ne": "चाउमिन" },
+      { "word": "Kebab", "hint": "Skewer", "word_ne": "कबाब", "hint_ne": "सिकार" },
+      { "word": "Dim Sum", "hint": "Steamer", "word_ne": "डिम सम", "hint_ne": "भाप" },
+      { "word": "Paella", "hint": "Saffron", "word_ne": "पाएल्ला", "hint_ne": "केशर" },
+      { "word": "Falafel", "hint": "Chickpea", "word_ne": "फालाफेल", "hint_ne": "चना" },
+      { "word": "Baklava", "hint": "Honey", "word_ne": "बकलावा", "hint_ne": "मह" },
+      { "word": "Ramen", "hint": "Broth", "word_ne": "रामेन", "hint_ne": "झोल" },
+      { "word": "Biryani", "hint": "Rice", "word_ne": "बिरयानी", "hint_ne": "भात" },
+      { "word": "Schnitzel", "hint": "Breaded", "word_ne": "श्निट्जेल", "hint_ne": "ब्रेडेड" },
+      { "word": "Churros", "hint": "Cinnamon", "word_ne": "चुरोस", "hint_ne": "दालचिनी" },
+      { "word": "Pho", "hint": "Vietnam", "word_ne": "फो", "hint_ne": "भियतनाम" },
+      { "word": "Gelato", "hint": "Italy", "word_ne": "जेलाटो", "hint_ne": "इटाली" },
+      { "word": "Empanada", "hint": "Stuffed", "word_ne": "एम्पानाडा", "hint_ne": "भरिएको" }
+    ]
+  },
+  {
+    "category": "Landmarks",
+    "category_ne": "विश्व सम्पदा",
+    "words": [
+      { "word": "Eiffel Tower", "hint": "Iron", "word_ne": "एफेल टावर", "hint_ne": "फलाम" },
+      { "word": "Great Wall of China", "hint": "Ancient", "word_ne": "चिनको ठूलो पर्खाल", "hint_ne": "पुरानो" },
+      { "word": "Machu Picchu", "hint": "Inca", "word_ne": "माचु पिच्चु", "hint_ne": "इन्का" },
+      { "word": "Taj Mahal", "hint": "Marble", "word_ne": "ताज महल", "hint_ne": "संगमरमर" },
+      { "word": "Pyramids of Giza", "hint": "Pharaoh", "word_ne": "गिजाका पिरामिड", "hint_ne": "फराउन" },
+      { "word": "Colosseum", "hint": "Gladiator", "word_ne": "कोलोसियम", "hint_ne": "ग्ल्याडिएटर" },
+      { "word": "Big Ben", "hint": "Clock", "word_ne": "बिग बेन", "hint_ne": "घडी" },
+      { "word": "Acropolis", "hint": "Athens", "word_ne": "एक्रोपोलिस", "hint_ne": "एथेन्स" },
+      { "word": "Sagrada Familia", "hint": "Barcelona", "word_ne": "सग्राडा फामिलिया", "hint_ne": "बार्सेलोना" },
+      { "word": "Angkor Wat", "hint": "Cambodia", "word_ne": "अन्कोर वाट", "hint_ne": "कम्बोडिया" },
+      { "word": "Stonehenge", "hint": "Stones", "word_ne": "स्टोनहेन्ज", "hint_ne": "ढुंगा" },
+      { "word": "Christ the Redeemer", "hint": "Rio", "word_ne": "क्राइस्ट द रिडिमर", "hint_ne": "रियो" },
+      { "word": "Sydney Opera House", "hint": "Sails", "word_ne": "सिड्नी ओपेरा हाउस", "hint_ne": "पाल" },
+      { "word": "Burj Khalifa", "hint": "Tallest", "word_ne": "बुर्ज खलिफा", "hint_ne": "सबैभन्दा अग्लो" },
+      { "word": "Petra", "hint": "Jordan", "word_ne": "पेट्रा", "hint_ne": "जोर्डन" },
+      { "word": "Alhambra", "hint": "Palace", "word_ne": "अल्हम्ब्रा", "hint_ne": "दरबार" }
+    ]
+  },
+  {
+    "category": "Festivals",
+    "category_ne": "चाडपर्व",
+    "words": [
+      { "word": "Christmas", "hint": "Santa", "word_ne": "क्रिसमस", "hint_ne": "सान्टा" },
+      { "word": "Carnival", "hint": "Brazil", "word_ne": "कार्निभल", "hint_ne": "ब्राजिल" },
+      { "word": "Diwali", "hint": "Lights", "word_ne": "दिवाली", "hint_ne": "दियो" },
+      { "word": "Chinese New Year", "hint": "Dragon", "word_ne": "चिनियाँ नयाँ वर्ष", "hint_ne": "अजिंगर" },
+      { "word": "Oktoberfest", "hint": "Beer", "word_ne": "अक्टोबरफेस्ट", "hint_ne": "बियर" },
+      { "word": "Ramadan", "hint": "Fasting", "word_ne": "रमजान", "hint_ne": "उपवास" },
+      { "word": "Hanukkah", "hint": "Menorah", "word_ne": "हानुक्का", "hint_ne": "मेनोरा" },
+      { "word": "Eid al-Fitr", "hint": "Crescent", "word_ne": "इद अल-फित्र", "hint_ne": "अर्धचन्द्र" },
+      { "word": "Day of the Dead", "hint": "Skull", "word_ne": "मृतकको दिन", "hint_ne": "खोपडी" },
+      { "word": "Songkran", "hint": "Water", "word_ne": "सोंक्रान", "hint_ne": "पानी" },
+      { "word": "La Tomatina", "hint": "Tomatoes", "word_ne": "ला टोमाटिना", "hint_ne": "गोलभेडा" },
+      { "word": "Running of the Bulls", "hint": "Pamplona", "word_ne": "बैलको दौड", "hint_ne": "पाम्प्लोना" },
+      { "word": "Glastonbury", "hint": "Music", "word_ne": "ग्लास्टनबरी", "hint_ne": "सङ्गीत" },
+      { "word": "Midsommar", "hint": "Sweden", "word_ne": "मिडसम्मर", "hint_ne": "स्विडेन" },
+      { "word": "Burning Man", "hint": "Desert", "word_ne": "बर्निङ म्यान", "hint_ne": "मरुभूमि" }
+    ]
+  },
+  {
+    "category": "Famous People",
+    "category_ne": "प्रसिद्ध व्यक्तित्व",
+    "words": [
+      { "word": "Albert Einstein", "hint": "Relativity", "word_ne": "अल्बर्ट आइन्स्टाइन", "hint_ne": "सापेक्षता" },
+      { "word": "Leonardo da Vinci", "hint": "Mona Lisa", "word_ne": "लियोनार्डो दा भिन्ची", "hint_ne": "मोना लिसा" },
+      { "word": "Nelson Mandela", "hint": "Freedom", "word_ne": "नेल्सन मन्डेला", "hint_ne": "स्वतन्त्रता" },
+      { "word": "Shakespeare", "hint": "Hamlet", "word_ne": "शेक्सपियर", "hint_ne": "ह्याम्लेट" },
+      { "word": "Cleopatra", "hint": "Egypt", "word_ne": "क्लियोपाट्रा", "hint_ne": "इजिप्ट" },
+      { "word": "Napoleon Bonaparte", "hint": "France", "word_ne": "नेपोलियन बोनापार्ट", "hint_ne": "फ्रान्स" },
+      { "word": "Mahatma Gandhi", "hint": "Nonviolence", "word_ne": "महात्मा गान्धी", "hint_ne": "अहिंसा" },
+      { "word": "Marie Curie", "hint": "Radium", "word_ne": "मेरी क्युरी", "hint_ne": "रेडियम" },
+      { "word": "Nikola Tesla", "hint": "Current", "word_ne": "निकोला टेस्ला", "hint_ne": "विद्युत" },
+      { "word": "Pablo Picasso", "hint": "Cubism", "word_ne": "पाब्लो पिकासो", "hint_ne": "क्युबिज्म" },
+      { "word": "Beethoven", "hint": "Symphony", "word_ne": "बिथोभन", "hint_ne": "सिम्फोनी" },
+      { "word": "Confucius", "hint": "Wisdom", "word_ne": "कन्फुसियस", "hint_ne": "बुद्धिमत्ता" },
+      { "word": "Marco Polo", "hint": "Explorer", "word_ne": "मार्को पोलो", "hint_ne": "अन्वेषक" },
+      { "word": "Muhammad Ali", "hint": "Boxing", "word_ne": "मुहम्मद अली", "hint_ne": "बक्सिङ" },
+      { "word": "Coco Chanel", "hint": "Fashion", "word_ne": "कोको चानेल", "hint_ne": "फेसन" }
+    ]
+  },
+  {
+    "category": "Sports",
+    "category_ne": "खेलकुद",
+    "words": [
+      { "word": "Soccer", "hint": "Goal", "word_ne": "फुटबल", "hint_ne": "गोल" },
+      { "word": "Tennis", "hint": "Racket", "word_ne": "टेनिस", "hint_ne": "र्‍याकेट" },
+      { "word": "Formula 1", "hint": "Pit Stop", "word_ne": "फर्मुला १", "hint_ne": "पिट स्टप" },
+      { "word": "Rugby", "hint": "Scrum", "word_ne": "रग्बी", "hint_ne": "स्क्रम" },
+      { "word": "Table Tennis", "hint": "Paddle", "word_ne": "टेबल टेनिस", "hint_ne": "प्याडल" },
+      { "word": "Cricket", "hint": "Wicket", "word_ne": "क्रिकेट", "hint_ne": "विकेट" },
+      { "word": "Cycling", "hint": "Tour", "word_ne": "साइकल दौड", "hint_ne": "टुर" },
+      { "word": "Swimming", "hint": "Lane", "word_ne": "पौडी", "hint_ne": "लेन" },
+      { "word": "Boxing", "hint": "Ring", "word_ne": "बक्सिङ", "hint_ne": "रिङ" },
+      { "word": "Gymnastics", "hint": "Vault", "word_ne": "जिम्नास्टिक्स", "hint_ne": "भल्ट" },
+      { "word": "Judo", "hint": "Throw", "word_ne": "जुडो", "hint_ne": "थ्रो" },
+      { "word": "Polo", "hint": "Horse", "word_ne": "पोलो", "hint_ne": "घोडा" },
+      { "word": "Curling", "hint": "Ice", "word_ne": "कर्लिङ", "hint_ne": "बरफ" },
+      { "word": "Fencing", "hint": "Sword", "word_ne": "फेन्सिङ", "hint_ne": "तरवार" },
+      { "word": "Archery", "hint": "Bow", "word_ne": "तीरन्दाजी", "hint_ne": "धनुष" }
+    ]
+  },
+  {
+    "category": "Nature",
+    "category_ne": "प्रकृति",
+    "words": [
+      { "word": "Amazon Rainforest", "hint": "Jungle", "word_ne": "अमाजन वर्षावन", "hint_ne": "जंगल" },
+      { "word": "Northern Lights", "hint": "Aurora", "word_ne": "उत्तरी प्रकाश", "hint_ne": "अरोरा" },
+      { "word": "Sahara Desert", "hint": "Sand", "word_ne": "सहारा मरुभूमि", "hint_ne": "बालुवा" },
+      { "word": "Great Barrier Reef", "hint": "Coral", "word_ne": "ग्रेट ब्यारियर रिफ", "hint_ne": "प्रवाल" },
+      { "word": "Mount Kilimanjaro", "hint": "Africa", "word_ne": "माउन्ट किलिमान्जारो", "hint_ne": "अफ्रिका" },
+      { "word": "Galápagos Islands", "hint": "Darwin", "word_ne": "गलापागोस द्वीप", "hint_ne": "डार्विन" },
+      { "word": "Mariana Trench", "hint": "Deep", "word_ne": "मारियाना ट्रेन्च", "hint_ne": "गहिरो" },
+      { "word": "Angel Falls", "hint": "Venezuela", "word_ne": "एन्जेल झरना", "hint_ne": "भेनेजुएला" },
+      { "word": "Dead Sea", "hint": "Salty", "word_ne": "मृत सागर", "hint_ne": "नुनिलो" },
+      { "word": "Polar Bear", "hint": "Arctic", "word_ne": "ध्रुवीय भालु", "hint_ne": "आर्कटिक" },
+      { "word": "Giant Panda", "hint": "Bamboo", "word_ne": "विशाल पाण्डा", "hint_ne": "बाँस" },
+      { "word": "Blue Whale", "hint": "Largest", "word_ne": "नीलो ह्वेल", "hint_ne": "सबैभन्दा ठूलो" },
+      { "word": "Redwood Forest", "hint": "Tall", "word_ne": "रेडवुड वन", "hint_ne": "अग्लो" },
+      { "word": "Iceberg", "hint": "Antarctic", "word_ne": "हिमखण्ड", "hint_ne": "अन्टार्कटिक" }
+    ]
+  },
+  {
+    "category": "Art & Culture",
+    "category_ne": "कला र संस्कृति",
+    "words": [
+      { "word": "Ballet", "hint": "Pointe", "word_ne": "ब्यालेट", "hint_ne": "पोइन्ट" },
+      { "word": "Flamenco", "hint": "Spain", "word_ne": "फ्ल्यामेन्को", "hint_ne": "स्पेन" },
+      { "word": "Origami", "hint": "Folding", "word_ne": "ओरिगामी", "hint_ne": "तह" },
+      { "word": "Bollywood", "hint": "Mumbai", "word_ne": "बलिउड", "hint_ne": "मुम्बई" },
+      { "word": "Jazz", "hint": "Improvise", "word_ne": "ज्याज", "hint_ne": "सुधार" },
+      { "word": "Opera", "hint": "Soprano", "word_ne": "ओपेरा", "hint_ne": "सोप्रानो" },
+      { "word": "Manga", "hint": "Japan", "word_ne": "मांगा", "hint_ne": "जापान" },
+      { "word": "Calligraphy", "hint": "Brush", "word_ne": "सुलेखन", "hint_ne": "कुची" },
+      { "word": "Batik", "hint": "Wax", "word_ne": "बाटिक", "hint_ne": "मैन" },
+      { "word": "Mural", "hint": "Wall", "word_ne": "भित्तिचित्र", "hint_ne": "पर्खाल" },
+      { "word": "Pottery", "hint": "Clay", "word_ne": "माटोका भाँडा", "hint_ne": "माटो" },
+      { "word": "Tango", "hint": "Argentina", "word_ne": "ट्याङ्गो", "hint_ne": "अर्जेन्टिना" },
+      { "word": "Kabuki", "hint": "Theatre", "word_ne": "काबुकी", "hint_ne": "थिएटर" },
+      { "word": "Graffiti", "hint": "Street", "word_ne": "ग्राफिटी", "hint_ne": "सडक" },
+      { "word": "Symphony", "hint": "Orchestra", "word_ne": "सिम्फोनी", "hint_ne": "अर्केस्ट्रा" }
+    ]
+  }
+]

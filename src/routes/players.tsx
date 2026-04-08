@@ -20,6 +20,7 @@ function PlayersScreen() {
   const [showAdd, setShowAdd] = useState(false)
   const [newName, setNewName] = useState('')
   const [newLang, setNewLang] = useState<Language>(settings.defaultLanguage)
+  const [confirmRemoveId, setConfirmRemoveId] = useState<string | null>(null)
 
   function persistPlayers(updated: Player[]) {
     setPlayers(updated)
@@ -35,8 +36,10 @@ function PlayersScreen() {
     setShowAdd(false)
   }
 
-  function removePlayer(id: string) {
-    persistPlayers(players.filter((p) => p.id !== id))
+  function confirmAndRemove() {
+    if (!confirmRemoveId) return
+    persistPlayers(players.filter((p) => p.id !== confirmRemoveId))
+    setConfirmRemoveId(null)
   }
 
   const canStart = players.length >= 3
@@ -61,7 +64,7 @@ function PlayersScreen() {
 
       {/* Player count pill */}
       <div className="px-5 mb-3">
-        <div className="flex items-center justify-between bg-[#1e2138] border border-purple-500/40 rounded-xl px-4 py-3">
+        <div className="flex items-center justify-between bg-surface2 border border-purple-500/40 rounded-xl px-4 py-3">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-lg bg-purple-600/30 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -72,7 +75,7 @@ function PlayersScreen() {
               {players.length} {t('players', 'playerCount')}
             </span>
           </div>
-          <div className="flex items-center gap-3 text-sm text-[#8b8fa8]">
+          <div className="flex items-center gap-3 text-sm text-muted">
             <span>{t('players', 'range')}</span>
             {players.length >= 3 && (
               <span className="text-purple-400 font-medium">
@@ -87,12 +90,12 @@ function PlayersScreen() {
       <div className="flex-1 px-5 overflow-y-auto">
         {players.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 text-center">
-            <div className="w-16 h-16 rounded-full bg-[#1e2138] flex items-center justify-center mb-4">
+            <div className="w-16 h-16 rounded-full bg-surface2 flex items-center justify-center mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8b8fa8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
               </svg>
             </div>
-            <p className="text-[#8b8fa8] text-sm">{t('players', 'addFirst')}</p>
+            <p className="text-muted text-sm">{t('players', 'addFirst')}</p>
           </div>
         ) : (
           <div className="flex flex-col gap-2">
@@ -105,18 +108,18 @@ function PlayersScreen() {
                   <span className="text-purple-300 font-bold text-sm">{player.name.charAt(0).toUpperCase()}</span>
                 </div>
                 <span className="flex-1 text-white font-medium">{player.name}</span>
-                <span className="text-xs px-2 py-0.5 rounded-full border border-white/15 text-[#8b8fa8]">
+                <span className="text-xs px-2 py-0.5 rounded-full border border-white/15 text-muted">
                   {player.language === 'en' ? 'EN' : 'NE'}
                 </span>
-                <span className="text-xs text-[#8b8fa8] bg-[#1e2138] px-2 py-1 rounded-full">
+                <span className="text-xs text-muted bg-surface2 px-2 py-1 rounded-full">
                   #{index + 1}
                 </span>
                 <button
-                  onClick={() => removePlayer(player.id)}
+                  onClick={() => setConfirmRemoveId(player.id)}
                   className="text-white/30 hover:text-red-400 transition-colors ml-1"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
                   </svg>
                 </button>
               </div>
@@ -136,7 +139,7 @@ function PlayersScreen() {
               onKeyDown={(e) => e.key === 'Enter' && addPlayer()}
               placeholder={t('players', 'namePlaceholder')}
               autoFocus
-              className="bg-[#1e2138] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#8b8fa8] outline-none focus:border-purple-500/60 transition-colors"
+              className="bg-surface2 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-muted outline-none focus:border-purple-500/60 transition-colors"
             />
             {/* Language toggle */}
             <div className="flex gap-2">
@@ -145,7 +148,7 @@ function PlayersScreen() {
                 className={`flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                   newLang === 'en'
                     ? 'bg-purple-600 text-white'
-                    : 'bg-[#1e2138] text-[#8b8fa8] border border-white/10'
+                    : 'bg-surface2 text-muted border border-white/10'
                 }`}
               >
                 English
@@ -155,7 +158,7 @@ function PlayersScreen() {
                 className={`flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all lang-ne ${
                   newLang === 'ne'
                     ? 'bg-purple-600 text-white'
-                    : 'bg-[#1e2138] text-[#8b8fa8] border border-white/10'
+                    : 'bg-surface2 text-muted border border-white/10'
                 }`}
               >
                 नेपाली
@@ -164,7 +167,7 @@ function PlayersScreen() {
             <div className="flex gap-2">
               <button
                 onClick={() => setShowAdd(false)}
-                className="flex-1 py-3 rounded-xl border border-white/15 text-[#8b8fa8] font-semibold text-sm"
+                className="flex-1 py-3 rounded-xl border border-white/15 text-muted font-semibold text-sm"
               >
                 {t('common', 'cancel')}
               </button>
@@ -182,19 +185,6 @@ function PlayersScreen() {
 
       {/* Bottom action buttons */}
       <div className="px-5 pb-8 pt-3 flex gap-3">
-        <button
-          onClick={() => {
-            if (players.length > 0) removePlayer(players[players.length - 1].id)
-          }}
-          disabled={players.length === 0}
-          className="flex-1 py-4 rounded-full border-2 border-red-500/50 text-red-400 font-bold flex items-center justify-center gap-2 disabled:opacity-30 active:scale-95 transition-all"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><line x1="9" y1="7" x2="15" y2="7"/>
-          </svg>
-          {t('players', 'remove')}
-        </button>
-
         {!showAdd ? (
           <button
             onClick={() => setShowAdd(true)}
@@ -220,6 +210,43 @@ function PlayersScreen() {
           </Link>
         </div>
       )}
+
+      {/* Confirm remove modal */}
+      {confirmRemoveId && (() => {
+        const player = players.find((p) => p.id === confirmRemoveId)!
+        return (
+          <div className="fixed inset-0 z-50 flex items-end justify-center pb-10 px-5">
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setConfirmRemoveId(null)} />
+            <div className="relative w-full bg-surface border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 animate-fade-in-up">
+              <div className="w-14 h-14 rounded-full bg-red-500/15 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f87171" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+                </svg>
+              </div>
+              <div className="text-center">
+                <p className="text-white font-bold text-lg">Remove Player?</p>
+                <p className="text-muted text-sm mt-1">
+                  <span className="text-white font-medium">{player.name}</span> will be removed from the game.
+                </p>
+              </div>
+              <div className="flex gap-3 w-full">
+                <button
+                  onClick={() => setConfirmRemoveId(null)}
+                  className="flex-1 py-3 rounded-xl border border-white/15 text-muted font-semibold text-sm"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={confirmAndRemove}
+                  className="flex-1 py-3 rounded-xl bg-red-500 text-white font-semibold text-sm active:scale-95 transition-all"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
     </div>
   )
 }

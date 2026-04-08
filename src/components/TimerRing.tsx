@@ -19,8 +19,8 @@ export function TimerRing({ progress, formatted, size = 140, isExpired = false }
     : '#ef4444'
 
   return (
-    <div className="flex flex-col items-center gap-2">
-      <svg width={size} height={size} className="-rotate-90">
+    <div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
+      <svg width={size} height={size} className="-rotate-90 absolute inset-0">
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -43,7 +43,7 @@ export function TimerRing({ progress, formatted, size = 140, isExpired = false }
         />
       </svg>
       <div
-        className="absolute text-3xl font-bold"
+        className="text-3xl font-bold"
         style={{ color }}
       >
         {formatted}

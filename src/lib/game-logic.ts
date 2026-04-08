@@ -8,6 +8,7 @@ import {
   saveCurrentGame,
   saveStats,
   getStats,
+  getWordPackData,
 } from './storage'
 import { shuffleArray, generateId } from './utils'
 
@@ -24,21 +25,26 @@ interface CategoryData {
   words: WordEntry[]
 }
 
-const WORD_DATA: Record<Region, CategoryData[]> = {
+const BUNDLED_WORD_DATA: Record<Region, CategoryData[]> = {
   us: usWords,
   nepal: nepalWords,
   world: worldWords,
 }
 
+function getWordData(region: Region): CategoryData[] {
+  const cached = getWordPackData(region) as CategoryData[] | null
+  return cached ?? BUNDLED_WORD_DATA[region]
+}
+
 export function getAvailableCategories(region: Region): string[] {
-  return WORD_DATA[region].map((c) => c.category)
+  return getWordData(region).map((c) => c.category)
 }
 
 export function pickWordAndCategory(
   region: Region,
   allowedCategories?: string[]
 ): { word: string; hint: string; category: string; wordLocalized: LocalizedText; hintLocalized: LocalizedText; categoryLocalized: LocalizedText } {
-  const data = WORD_DATA[region]
+  const data = getWordData(region)
   const recentWords = getRecentWords()
 
   let pool = allowedCategories?.length

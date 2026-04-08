@@ -1,0 +1,32 @@
+[
+  {
+    "id": "us",
+    "nameKey": "us",
+    "flag": "🇺🇸",
+    "bilingual": true,
+    "autoDownload": true,
+    "url": "/words/us.json",
+    "categories": 7,
+    "words": 109
+  },
+  {
+    "id": "nepal",
+    "nameKey": "nepal",
+    "flag": "🇳🇵",
+    "bilingual": true,
+    "autoDownload": true,
+    "url": "/words/nepal.json",
+    "categories": 6,
+    "words": 84
+  },
+  {
+    "id": "world",
+    "nameKey": "world",
+    "flag": "🌍",
+    "bilingual": true,
+    "autoDownload": true,
+    "url": "/words/world.json",
+    "categories": 7,
+    "words": 107
+  }
+]

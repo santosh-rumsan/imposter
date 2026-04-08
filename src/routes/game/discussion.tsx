@@ -1,5 +1,4 @@
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
-import { useState } from 'react'
 import { getCurrentGame, saveCurrentGame, getSettings } from '../../lib/storage'
 import { useTranslation } from '../../hooks/useTranslation'
 import { useTimer } from '../../hooks/useTimer'
@@ -14,9 +13,7 @@ function DiscussionScreen() {
   const settings = getSettings()
   const { t } = useTranslation(settings.defaultLanguage)
   const game = getCurrentGame()
-  const [timerStarted, setTimerStarted] = useState(false)
-
-  const timer = useTimer(settings.timerDuration, settings.timerEnabled, false)
+  const timer = useTimer(settings.timerDuration, settings.timerEnabled, true)
 
   if (!game) {
     navigate({ to: '/' })
@@ -28,11 +25,6 @@ function DiscussionScreen() {
     const updated = { ...game, phase: 'voting' as const }
     saveCurrentGame(updated)
     navigate({ to: '/game/vote' })
-  }
-
-  function handleStartTimer() {
-    setTimerStarted(true)
-    timer.start()
   }
 
   return (
@@ -58,32 +50,20 @@ function DiscussionScreen() {
         {/* Timer */}
         {settings.timerEnabled && (
           <div className="flex flex-col items-center gap-4">
-            <div className="relative flex items-center justify-center">
-              <TimerRing
-                progress={timer.progress}
-                formatted={timer.formatted}
-                size={160}
-                isExpired={timer.isExpired}
-              />
-              <div className="absolute text-3xl font-bold" style={{ color: timer.isExpired ? '#ef4444' : timer.progress > 0.5 ? '#7c3aed' : timer.progress > 0.25 ? '#f59e0b' : '#ef4444' }}>
-                {timer.formatted}
-              </div>
-            </div>
-            {!timerStarted ? (
-              <button
-                onClick={handleStartTimer}
-                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-2.5 rounded-full text-sm transition-all active:scale-95"
-              >
-                Start Timer
-              </button>
-            ) : timer.isExpired ? (
+            <TimerRing
+              progress={timer.progress}
+              formatted={timer.formatted}
+              size={160}
+              isExpired={timer.isExpired}
+            />
+            {timer.isExpired ? (
               <p className="text-red-400 font-bold text-lg animate-pulse">{t('discussion', 'timeUp')}</p>
             ) : (
               <button
-                onClick={timer.pause}
+                onClick={timer.running ? timer.pause : timer.start}
                 className="text-[#8b8fa8] hover:text-white text-sm transition-colors"
               >
-                Pause
+                {timer.running ? 'Pause' : 'Resume'}
               </button>
             )}
           </div>

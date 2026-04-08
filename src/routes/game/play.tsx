@@ -27,9 +27,15 @@ function PlayScreen() {
 
   function goToDiscussion() {
     if (!game) return
-    const updated = { ...game, phase: 'discussion' as const }
-    saveCurrentGame(updated)
-    navigate({ to: '/game/discussion' })
+    if (!settings.timerEnabled) {
+      const updated = { ...game, phase: 'voting' as const }
+      saveCurrentGame(updated)
+      navigate({ to: '/game/vote' })
+    } else {
+      const updated = { ...game, phase: 'discussion' as const }
+      saveCurrentGame(updated)
+      navigate({ to: '/game/discussion' })
+    }
   }
 
   return (

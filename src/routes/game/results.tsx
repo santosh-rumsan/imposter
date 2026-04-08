@@ -26,7 +26,8 @@ function ResultsScreen() {
   useEffect(() => {
     if (!game || recorded) return
     const { imposterWins } = getGameResult(game)
-    recordGameResult(game, imposterWins, getPlayers())
+    const isVerbal = settings.votingMode === 'verbal' && Object.keys(game.votes).length === 0
+    recordGameResult(game, isVerbal ? false : imposterWins, getPlayers())
     setRecorded(true)
     setTimeout(() => setShowDetails(true), 600)
   }, [game])
@@ -40,6 +41,7 @@ function ResultsScreen() {
   }
 
   const { imposterWins, voteTargetId } = getGameResult(game)
+  const isVerbalNoVotes = settings.votingMode === 'verbal' && Object.keys(game.votes).length === 0
   const imposters = game.players.filter((p) => p.isImposter)
   const imposterNames = imposters.map((p) => p.name).join(', ')
 
@@ -61,16 +63,18 @@ function ResultsScreen() {
       {/* Result banner */}
       <div className={cn(
         'rounded-2xl p-8 text-center mb-6 border-2 animate-scale-in',
-        imposterWins
+        isVerbalNoVotes
+          ? 'bg-surface border-white/20'
+          : imposterWins
           ? 'bg-red-950/50 border-red-500/60'
           : 'bg-purple-950/50 border-purple-500/60'
       )}>
-        <div className="text-5xl mb-3">{imposterWins ? '🕵️' : '🎉'}</div>
+        <div className="text-5xl mb-3">{isVerbalNoVotes ? '🕵️' : imposterWins ? '🕵️' : '🎉'}</div>
         <h1 className={cn(
           'text-3xl font-black',
-          imposterWins ? 'text-red-400' : 'text-purple-400'
+          isVerbalNoVotes ? 'text-white/80' : imposterWins ? 'text-red-400' : 'text-purple-400'
         )}>
-          {imposterWins ? t('results', 'imposterWins') : t('results', 'citizensWin')}
+          {isVerbalNoVotes ? t('results', 'gameOver') : imposterWins ? t('results', 'imposterWins') : t('results', 'citizensWin')}
         </h1>
       </div>
 

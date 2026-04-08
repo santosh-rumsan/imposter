@@ -1,5 +1,6 @@
 {
   "home": {
+    "title": "Imposter",
     "subtitle": "Word Game",
     "tagline": "A party game of hidden ideas & cunning clues",
     "getStarted": "Get Started",
@@ -84,6 +85,7 @@
   },
   "results": {
     "title": "Results",
+    "gameOver": "Game Over",
     "imposterWins": "Imposter Wins!",
     "citizensWin": "Citizens Win!",
     "theImposterwas": "The Imposter was",
@@ -121,6 +123,30 @@
     "confirmClear": "Are you sure? This will delete all stats.",
     "noStats": "No games played yet!",
     "playerStats": "Player Stats"
+  },
+  "appSettings": {
+    "title": "App Settings",
+    "wordPacks": "Word Packs",
+    "categories": "categories",
+    "words": "words",
+    "bilingual": "Bilingual",
+    "englishOnly": "English Only",
+    "cache": "Cache",
+    "recentWords": "Recent Words Cache",
+    "recentWordsDesc": "Tracks recently used words to avoid repetition",
+    "clearCache": "Clear All Cache",
+    "clearCacheDesc": "This will reset all app data including players, stats, settings, and recent words history.",
+    "confirmClear": "Clear Everything?",
+    "cleared": "Cache cleared!",
+    "refresh": "Refresh",
+    "refreshAll": "Refresh All",
+    "refreshing": "Refreshing...",
+    "downloading": "Downloading...",
+    "cachedOn": "Cached on",
+    "notCached": "Not cached",
+    "download": "Download",
+    "loadingPacks": "Loading word packs...",
+    "auto": "Auto"
   },
   "common": {
     "back": "Back",

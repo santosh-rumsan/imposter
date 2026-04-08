@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as StatsRouteImport } from './routes/stats'
+import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as PlayersRouteImport } from './routes/players'
 import { Route as HowToPlayRouteImport } from './routes/how-to-play'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ import { Route as GameRevealPlayerIdRouteImport } from './routes/game/reveal.$pl
 const StatsRoute = StatsRouteImport.update({
   id: '/stats',
   path: '/stats',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlayersRoute = PlayersRouteImport.update({
@@ -75,6 +81,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/how-to-play': typeof HowToPlayRoute
   '/players': typeof PlayersRoute
+  '/settings': typeof SettingsRoute
   '/stats': typeof StatsRoute
   '/game/discussion': typeof GameDiscussionRoute
   '/game/play': typeof GamePlayRoute
@@ -87,6 +94,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/how-to-play': typeof HowToPlayRoute
   '/players': typeof PlayersRoute
+  '/settings': typeof SettingsRoute
   '/stats': typeof StatsRoute
   '/game/discussion': typeof GameDiscussionRoute
   '/game/play': typeof GamePlayRoute
@@ -100,6 +108,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/how-to-play': typeof HowToPlayRoute
   '/players': typeof PlayersRoute
+  '/settings': typeof SettingsRoute
   '/stats': typeof StatsRoute
   '/game/discussion': typeof GameDiscussionRoute
   '/game/play': typeof GamePlayRoute
@@ -114,6 +123,7 @@ export interface FileRouteTypes {
     | '/'
     | '/how-to-play'
     | '/players'
+    | '/settings'
     | '/stats'
     | '/game/discussion'
     | '/game/play'
@@ -126,6 +136,7 @@ export interface FileRouteTypes {
     | '/'
     | '/how-to-play'
     | '/players'
+    | '/settings'
     | '/stats'
     | '/game/discussion'
     | '/game/play'
@@ -138,6 +149,7 @@ export interface FileRouteTypes {
     | '/'
     | '/how-to-play'
     | '/players'
+    | '/settings'
     | '/stats'
     | '/game/discussion'
     | '/game/play'
@@ -151,6 +163,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   HowToPlayRoute: typeof HowToPlayRoute
   PlayersRoute: typeof PlayersRoute
+  SettingsRoute: typeof SettingsRoute
   StatsRoute: typeof StatsRoute
   GameDiscussionRoute: typeof GameDiscussionRoute
   GamePlayRoute: typeof GamePlayRoute
@@ -167,6 +180,13 @@ declare module '@tanstack/react-router' {
       path: '/stats'
       fullPath: '/stats'
       preLoaderRoute: typeof StatsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/players': {
@@ -239,6 +259,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   HowToPlayRoute: HowToPlayRoute,
   PlayersRoute: PlayersRoute,
+  SettingsRoute: SettingsRoute,
   StatsRoute: StatsRoute,
   GameDiscussionRoute: GameDiscussionRoute,
   GamePlayRoute: GamePlayRoute,

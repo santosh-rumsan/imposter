@@ -70,9 +70,9 @@ const STORAGE_KEY = 'imposter_game'
 
 const DEFAULT_SETTINGS: Settings = {
   region: 'world',
-  timerEnabled: true,
+  timerEnabled: false,
   timerDuration: 180,
-  votingMode: 'in-app',
+  votingMode: 'verbal',
   defaultLanguage: 'en',
   showCategoryToImposter: false,
   showHintToImposter: true,
@@ -174,4 +174,97 @@ export function addRecentWord(word: string): void {
   const recent = getRecentWords()
   const updated = [word, ...recent.filter((w) => w !== word)].slice(0, 30)
   localStorage.setItem('imposter_recent_words', JSON.stringify(updated))
+}
+
+export function clearAllCache(): void {
+  if (typeof window === 'undefined') return
+  localStorage.removeItem(STORAGE_KEY)
+  localStorage.removeItem('imposter_recent_words')
+  clearWordPackCache()
+}
+
+export function getRecentWordsCount(): number {
+  return getRecentWords().length
+}
+
+// ── Word Pack Cache ──────────────────────────────────────────────────────────
+
+const WORD_PACK_META_KEY = 'imposter_word_pack_meta'
+const WORD_PACK_INDEX_KEY = 'imposter_word_pack_index'
+
+export interface WordPackMeta {
+  cachedAt: number
+}
+
+export interface WordPackEntry {
+  id: string
+  nameKey: string
+  flag: string
+  bilingual: boolean
+  autoDownload: boolean
+  url: string
+  categories: number
+  words: number
+}
+
+export function getWordPackIndex(): WordPackEntry[] | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const raw = localStorage.getItem(WORD_PACK_INDEX_KEY)
+    return raw ? JSON.parse(raw) : null
+  } catch {
+    return null
+  }
+}
+
+export function saveWordPackIndex(entries: WordPackEntry[]): void {
+  if (typeof window === 'undefined') return
+  localStorage.setItem(WORD_PACK_INDEX_KEY, JSON.stringify(entries))
+}
+
+export function getWordPackMeta(): Record<string, WordPackMeta> {
+  if (typeof window === 'undefined') return {}
+  try {
+    const raw = localStorage.getItem(WORD_PACK_META_KEY)
+    return raw ? JSON.parse(raw) : {}
+  } catch {
+    return {}
+  }
+}
+
+export function getWordPackData(region: string): unknown[] | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const raw = localStorage.getItem(`imposter_words_${region}`)
+    return raw ? JSON.parse(raw) : null
+  } catch {
+    return null
+  }
+}
+
+export function saveWordPackData(region: string, data: unknown[]): void {
+  if (typeof window === 'undefined') return
+  localStorage.setItem(`imposter_words_${region}`, JSON.stringify(data))
+  const meta = getWordPackMeta()
+  meta[region] = { cachedAt: Date.now() }
+  localStorage.setItem(WORD_PACK_META_KEY, JSON.stringify(meta))
+}
+
+export function clearWordPackCache(id?: string): void {
+  if (typeof window === 'undefined') return
+  if (id) {
+    localStorage.removeItem(`imposter_words_${id}`)
+    const meta = getWordPackMeta()
+    delete meta[id]
+    localStorage.setItem(WORD_PACK_META_KEY, JSON.stringify(meta))
+  } else {
+    const keys: string[] = []
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i)
+      if (key?.startsWith('imposter_words_')) keys.push(key)
+    }
+    keys.forEach((k) => localStorage.removeItem(k))
+    localStorage.removeItem(WORD_PACK_META_KEY)
+    localStorage.removeItem(WORD_PACK_INDEX_KEY)
+  }
 }
